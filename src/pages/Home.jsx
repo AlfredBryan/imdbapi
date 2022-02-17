@@ -18,7 +18,7 @@ export const Home = () => {
             plugins: {
               title: {
                 display: true,
-                text: "Cryptocurrency prices",
+                text: "Awards per year",
               },
               legend: {
                 display: true,
