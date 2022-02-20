@@ -12,7 +12,7 @@ export const useChat = () => {
       params: { page_size: "22" },
       headers: {
         "x-rapidapi-host": "data-imdb1.p.rapidapi.com",
-        "x-rapidapi-key": "a4c3234f2dmsh23c6e8b37152655p1ab977jsn6a2fdd5ce101",
+        "x-rapidapi-key": process.env.REACT_APP_KEY,
       },
     };
 
@@ -36,7 +36,7 @@ export const useChat = () => {
     const count = Object.values(array);
 
     setChartData({
-      labels: years.map((year) => year),
+      labels: years?.map((year) => year),
       datasets: [
         {
           label: "Awards",
